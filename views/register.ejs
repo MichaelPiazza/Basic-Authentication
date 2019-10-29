@@ -1,0 +1,37 @@
+<% include ../partials/header %>
+
+<div class="ui container" id="center-align">
+    <div class="ui segment">
+        <h1 class="ui dividing header">Register Form</h1>
+        <form class="ui form" action="/user/register" method="POST">
+            <div class="field">
+                <label>Username</label>
+                <div class="ui left icon input">
+                    <input type="text" name="username" id="username" placeholder="" required>
+                    <i class="user plus icon"></i>
+                </div>
+            </div>
+            <div class="field">
+                <label>Email</label>
+                <div class="ui left icon input">
+                    <input type="text" name="email" id="email" placeholder="" required>
+                    <i class="envelope outline icon"></i>
+                </div>
+            </div>
+            <div class="field">
+                <label>Password</label>
+                <div class="ui left icon input">
+                    <input type="password" name="password" id="password" placeholder="" required>
+                    <i class="key icon"></i>
+                </div>
+
+            </div>
+            <button class="ui fluid primary button">Submit</button>
+        </form>
+    </div>
+    <div class="ui segment">
+        <p>Already a user? <a href="#">Sign in</a> </p>
+    </div>
+</div>
+
+<% include ../partials/footer %>

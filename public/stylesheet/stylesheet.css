@@ -1,0 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #E7FEFF;
+}
+#center-align {
+    width: 500px;
+    position: relative;
+    top: 20%;
+}

@@ -1,0 +1,21 @@
+<% include ../partials/header %>
+
+<div class="ui container">
+    <% if(message && message.length > 0) { %>
+        <div class="ui success message">
+            <%= message %>
+        </div>
+    <% } %>
+    
+    <h1>Welcome, <%= currentUser.username %></h1>
+    <% if(currentUser) { %>
+        <a href="/user/login" class="ui primary button">Login</a>
+        <a href="/logout" class="ui primary button">Logout</a>
+    <% } else { %>
+        <a href="/user/register" class="ui primary button">Register</a>
+    <% } %>
+     
+
+</div>
+
+<% include ../partials/footer %>
